@@ -6,12 +6,12 @@ class Hash{
     }
     hash(key)
     {
-        let hash=0;
+        let index=0;
         for(let i=0;i<key.length;i++)
         {
-            hash+=key.charCodeAt(i)
+            index=index+key.charCodeAt(i)
         }
-        return hash%this.size;
+        return index%this.size;
     }
     set(key,value)
     {
